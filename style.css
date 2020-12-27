@@ -11,14 +11,25 @@
   .nav-bar{
     display:none;
   }
+  .main-img{
+    display: none;
+  }
+  .about-full{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 901px){
   .mobile-nav-bar{
     display:none;
   }
+  .main-img-mobile{
+    display: none;
+  }
+  .about-me-mobile{
+    display: none;
+  }
 }
-
 
 /* main styles */
 .main{
@@ -27,8 +38,176 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_960_720.jpg');
+  background: url('https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_960_720.jpg') rgba(57,62,70, .95);
+  background-blend-mode: multiply;
+  background-position: center;
   background-size: cover;
+}
+
+/* portrait styles*/
+.main-img{
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 250px;
+  margin: auto;
+}
+
+.portrait{
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  border: solid 3px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.hi-there{
+  color: #eeeeee;
+  padding: 10px 0 0;
+  font-size: 45px;
+  opacity: 0;
+  transform: translateY(20px);
+  font-weight: bold;
+}
+
+.im-quentin{
+  color: #eeeeee;
+  padding: 10px 0 0;
+  font-size: 28px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.about-me{
+  color: #eeeeee;
+  padding: 10px 0 0;
+  font-size: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.about-me-cont{
+  color: #00adb5;
+  padding: 55px 0 0;
+  font-size: 18px;
+  opacity: 0;
+  transform: translateY(150%);
+  cursor: pointer;
+}
+
+/* mobile portrait styles */
+.main-img-mobile{
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 100px;
+  margin: auto;
+}
+
+.portrait-mobile{
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  border: solid 3px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.hi-there-mobile{
+  color: #eeeeee;
+  padding: 10px 0 0;
+  font-size: 45px;
+  opacity: 0;
+  transform: translateY(20px);
+  font-weight: bold;
+}
+
+.im-quentin-mobile{
+  color: #eeeeee;
+  padding: 10px 0 0;
+  font-size: 28px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.about-me-mobile{
+  color: #eeeeee;
+  padding: 10px 0 0;
+  font-size: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.about-me-cont-mobile{
+  color: #00adb5;
+  padding: 10px 0 0;
+  font-size: 18px;
+  opacity: 0;
+  transform: translateY(150%);
+  cursor: pointer;
+}
+
+/* about me full styles*/
+.about-full{
+  position: absolute;
+  background:	
+rgba(57,62,70, .95);
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  margin-left: -37.5%;
+  width: 75%;
+  height:32%;
+  border-radius: 10px 10px 0 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.about-full-close{
+  color: #00adb5;
+  padding: 2px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.about-full-text{
+  padding: 60px 60px;
+  color: #eeeeee;
+  font-size: 18px;
+  opacity: 0;
+}
+
+/* about-full-mobile*/
+.about-full-mobile{
+  position: absolute;
+  background:	
+  rgba(57,62,70, .95);
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  margin-left: -47.5%;
+  width: 95%;
+  height:35%;
+  border-radius: 10px 10px 0 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.about-full-close-mobile{
+  color: #00adb5;
+  padding: 2px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.about-full-text-mobile{
+  padding: 8px 8px;
+  color: #eeeeee;
+  font-size: 14px;
+  opacity: 0;
 }
 
 /* mobile navigation styles */
@@ -155,6 +334,7 @@
 }
 
 .hidden-notification a{
+  padding: 0 5px;
   text-decoration: none;
   color: #008187;
 }
@@ -166,6 +346,7 @@
   padding: 5px;
   color: #222831;
 }
+
 
 /* intro animation styles */
 .intro{
